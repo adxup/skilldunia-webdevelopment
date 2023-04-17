@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // coding begins
+
+        let num1 = 3;
+        let num2 = 7;
+
+        let res = 0;
+
+        document.write(`the value of num1: ${num1} <br />`);
+        document.write(`the value of num2: ${num2} <br />`);
+
+        // Arithmatic
+        // 1. Binary : +, -, *, /, %, ^
+        res = num1 * num2;
+        document.write(`the value of res: ${res} <br />`);
+
+        // Unary : ++, --
+        document.write(`the previous value of num1: ${num1} <br />`);
+        ++num1; // num1 = num1 + 1
+        document.write(`the updated value of num1: ${num1} <br />`);
+
+        document.write(`the previous value of num2: ${num2} <br />`);
+        num2--;
+        document.write(`the updated value of num2: ${num2} <br />`);
+
+        // Assignment: +=, -=, *=, /=, %=
+        document.write(`the previous value of num1: ${num1} <br />`);
+        num1 += num2; // num1 = num1 + num2
+        document.write(`the updated value of num1: ${num1} <br />`);
+
+        let x = "4";
+        let y = 4.0;
+        let z = 4;
+
+        document.write(
+          `the value of x: ${x}, and its datatype: ${typeof x} <br />`
+        );
+        document.write(
+          `the value of y: ${y}, and its datatype: ${typeof y} <br />`
+        );
+        document.write(
+          `the value of z: ${z}, and its datatype: ${typeof z} <br />`
+        );
+
+        // Comparison: ==, !=, ===, !==, <, >, <=, >=
+        res = x === y;
+        document.write(`the value of res: ${res} <br />`);
+
+        // Conditional: () ? ...  : ...;
+        res = x > y ? "x > y is true" : "x > y is not true";
+        document.write(`the value of res: ${res} <br />`);
+
+        // Logical: &&, ||, !
+        res = x === y && y <= z;
+        document.write(`the value of res: ${res} <br />`);
+
+        res = x === y || y <= z;
+        document.write(`the value of res: ${res} <br />`);
+
+        res = !(x === y && y <= z);
+        document.write(`the value of res: ${res} <br />`);
+
+        res = !(x === y || y <= z);
+        document.write(`the value of res: ${res} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

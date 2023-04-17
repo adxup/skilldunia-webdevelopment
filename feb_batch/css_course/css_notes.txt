@@ -1,0 +1,5 @@
+-> What is CSS?
+    - CSS stands for Cascading Style Sheets
+    - Used to apply the Styles to Html Pages
+
+    

@@ -1,0 +1,43 @@
+-> What is Javascript?
+-> Features, Advantages
+-> Applications
+
+-> Gettting Started with Javascript
+-> Displaying the Data / Value
+-> Data Types
+    1. Primitive Data Types
+        1. Number
+        2. String 
+        3. Boolean
+
+    2. Non Primitive / Abstract Data Types
+        1. Array
+        2. Function
+        3. Class & Object
+
+-> Identifiers
+    eg., num1, 1num (x), _num1, myName, 
+
+-> Keywords
+    eg., if, else, try, async 
+
+-> Declare Variables
+    1. var 
+    2. let 
+    3. const 
+
+-> Operators
+    1. Arithmatic 
+    2. Assignment 
+    3. Comparison
+    4. Conditional
+    5. Logical
+
+-> Statements:
+    1. Decision Making Statements
+    2. Loop Statements
+
+-> Arrays:
+-> Functions
+-> DOM:
+    

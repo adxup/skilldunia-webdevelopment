@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // body part js script
+        let a = 0; // 0, null, none,  , false - false
+
+        // if, if else, switch case
+        if (a) {
+          document.write(`the value of a: ${a} is valid value <br />`);
+        } else {
+          document.write(`the value of a: ${a} is not a valid value <br />`);
+        }
+
+        let age = 11;
+        if (age) {
+          document.write(`the value of age: ${age} is a valid value <br />`);
+          if (age >= 10 && age < 20) {
+            document.write(
+              `the value of age: ${age} is in between 10 and 20 <br />`
+            );
+          } else if (age >= 20 && age < 30) {
+            document.write(
+              `the value of age: ${age} is in between 20 and 30 <br />`
+            );
+          }
+        } else {
+          document.write(
+            `the value of age: ${age} is not a valid value <br />`
+          );
+        }
+
+        let productName = "lenovo";
+        switch (productName) {
+          case "hp":
+            document.write(
+              `the value of productName: ${productName} is matching with 'hp' <br />`
+            );
+            break;
+          case "lenovo":
+            document.write(
+              `the value of productName: ${productName} is matching with 'lenovo' <br />`
+            );
+            break;
+          case "dell":
+            document.write(
+              `the value of productName: ${productName} is matching with 'dell' <br />`
+            );
+            break;
+          case "acer":
+            document.write(
+              `the value of productName: ${productName} is matching with 'acer' <br />`
+            );
+            break;
+          default:
+            document.write(`none of the case is matching <br />`);
+        }
+      </script>
+    </div>
+  </body>
+</html>

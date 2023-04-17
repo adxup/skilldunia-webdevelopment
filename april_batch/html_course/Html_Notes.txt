@@ -1,0 +1,50 @@
+-> What is HTML?
+    - HTML stands for Hyper Text Markup Language
+    - Used to Create the Structure of the Web Page
+
+-> To Create the Structure of the Web Page:
+    1. Elements
+        - An Element is a name which is used to represent the particular format of the Content
+        - a Content can be Text, Image, Video & Audio, Link, Table, Form etc.,
+        - Two types of Elements:
+            1. Block
+                <elementName>
+                    .....
+                    .....
+                </elementName>
+                eg., <p> ..... </p>, <div> .... </div>, <a> ... </a>
+
+            2. Inline
+                <elementName />
+                eg., <hr />, <img />
+
+    2. Attributes
+        - The Attribute is a name which is used to add the Characteristics to the Element
+        1. Block
+                <elementName attributeName="itsValue" attributeName>
+                    .....
+                    .....
+                </elementName>
+                eg., <p hidden> ..... </p>, <div style=""> .... </div>, <a> ... </a>
+
+            2. Inline
+                <elementName />
+                eg., <hr />, <img src="" />
+
+
+-> Formatting Elements
+-> Listings
+-> Tables
+-> Forms
+-> Media Objects
+-> Semantic Elements
+    main
+    header
+    footer
+    section
+    article
+    aside
+    figure
+    audio
+    video
+    

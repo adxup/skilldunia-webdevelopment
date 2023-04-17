@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+      class UserDetails {
+        constructor(userId, userName, userEmail, userStatus) {
+          this.userId = userId;
+          this.userName = userName;
+          this.userEmail = userEmail;
+          this.userStatus = userStatus;
+        }
+
+        getUser() {
+          document.getElementById("showUser").innerHTML += `
+                The User Details are: <br />
+                userId: ${this.userId} <br />
+                userName: ${this.userName} <br /> 
+                userEmail: ${this.userEmail} <br />
+                userStatus: ${this.userStatus} <br />
+                --------------------------------- <br />  <br />
+            `;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showUser"></div>
+      <script>
+        // coding begins
+        let user1 = new UserDetails(1, "john", "john@gmail.com", true);
+        user1.getUser();
+
+        let user2 = new UserDetails(2, "paul", "paul@gmail.com", false);
+        user2.getUser();
+
+        let user3 = new UserDetails(3, "david", "david@gmail.com", true);
+        user3.getUser();
+      </script>
+    </div>
+  </body>
+</html>

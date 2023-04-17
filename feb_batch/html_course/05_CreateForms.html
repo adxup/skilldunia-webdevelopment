@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html</title>
+  </head>
+  <body>
+    <h4>Creating a Form</h4>
+
+    <form name="signup">
+      <table border="1px">
+        <tr>
+          <td>First Name</td>
+          <td>
+            <input
+              type="text"
+              name="firstName"
+              value=""
+              placeholder="ex., john"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text" name="lastName" value="" /></td>
+        </tr>
+        <tr>
+          <td>Full Name</td>
+          <td><input type="text" name="fullName" value="" /></td>
+        </tr>
+        <tr>
+          <td>User Name</td>
+          <td><input type="text" name="userName" value="" /></td>
+        </tr>
+        <tr>
+          <td>Email Address</td>
+          <td><input type="email" name="emailAddress" value="" /></td>
+        </tr>
+        <tr>
+          <td>Mobile Number</td>
+          <td><input type="text" name="mobileNumber" value="" /></td>
+        </tr>
+        <tr>
+          <td>Date of Birth</td>
+          <td><input type="date" name="dob" value="" /></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gender" value="male" /> male
+            <input type="radio" name="gender" value="female" /> female
+          </td>
+        </tr>
+        <tr>
+          <td>Languages</td>
+          <td>
+            <input type="checkbox" name="languages[]" value="english" /> english
+            <input type="checkbox" name="languages[]" value="tamil" /> tamil
+            <input type="checkbox" name="languages[]" value="spanish" /> spanish
+            <input type="checkbox" name="languages[]" value="deutsch" /> deutsch
+            <input type="checkbox" name="languages[]" value="other" /> other
+          </td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>
+            <select name="country" multiple>
+              <option value="">choose country</option>
+              <option value="usa">usa</option>
+              <option value="uae">uae</option>
+              <option value="uk">uk</option>
+              <option value="other">other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>File Upload</td>
+          <td><input type="file" name="fileupload" /></td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td><textarea name="description"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" name="submit" value="submit" />
+            <input type="reset" name="reset" value="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      .click-btn {
+        background-color: aquamarine;
+      }
+    </style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="https://www.google.com" target="_blank" id="ancLink1"
+        >Go to Google</a
+      >
+      <br />
+      <button type="button" id="btnButton">Click on Button</button> <br />
+      <a href="#" id="ancLink2">Its an another link</a> <br /><br />
+      <script>
+        // coding begins
+        var link1 = document.getElementById("ancLink1");
+
+        var href = link1.getAttribute("href");
+        document.write(`the href attribute value: ${href} <br />`);
+
+        var btn1 = document.getElementById("btnButton");
+        btn1.setAttribute("class", "click-btn");
+
+        link1.removeAttribute("href");
+      </script>
+    </div>
+  </body>
+</html>

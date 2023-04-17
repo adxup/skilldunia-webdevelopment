@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+      function myDisp(val) {
+        document.write(`the value: ${val} <br />`);
+      }
+
+      function myCalc(n1, n2, callBack) {
+        let res = n1 + n2;
+        callBack(res);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // body part js script
+        let x = 6;
+        let y = 9;
+
+        myCalc(x, y, myDisp);
+      </script>
+    </div>
+  </body>
+</html>

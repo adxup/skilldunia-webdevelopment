@@ -1,0 +1,28 @@
+body {
+  background-color: beige;
+}
+
+p {
+  color: #000;
+  line-height: normal;
+}
+
+div {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+#myContent {
+  color: #3a2;
+  text-decoration: line-through;
+}
+
+.myBox {
+  background-color: #d5ae;
+  color: #000;
+}
+
+.box1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

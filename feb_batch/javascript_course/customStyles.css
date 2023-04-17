@@ -1,0 +1,25 @@
+* {
+  margin: 0px auto;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: lightgray;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.wrapper {
+  width: 960px;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
+.para_content {
+  color: blueviolet;
+}

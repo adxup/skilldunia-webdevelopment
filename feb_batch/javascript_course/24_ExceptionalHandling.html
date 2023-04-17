@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+      function doAction() {
+        let num1 = 10;
+        let num2 = 24;
+
+        let res = 0;
+
+        try {
+          res = num1 * num2;
+          if (res) {
+            document.getElementById(
+              "getRes"
+            ).innerHTML = `the res: ${res} <br />`;
+          } else {
+            throw new Error("there might be somethng invalid data!");
+          }
+        } catch (err) {
+          document.getElementById(
+            "getRes"
+          ).innerHTML = `the res: ${err} <br />`;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="getRes"></div>
+
+      <button type="button" onclick="doAction()">do Action</button>
+      <script>
+        // coding begins
+      </script>
+    </div>
+  </body>
+</html>

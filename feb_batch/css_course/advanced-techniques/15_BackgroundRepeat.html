@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Repeat</title>
+    <style>
+      div {
+        height: 20vh;
+        border: 2px solid #f00;
+      }
+
+      #repeat {
+        background-image: url("pencil-png-1.png");
+        background-repeat: repeat;
+      }
+      #repeat-x {
+        background-image: url("pencil-png-1.png");
+        background-repeat: repeat-x;
+      }
+      #repeat-y {
+        background-image: url("pencil-png-1.png");
+        background-repeat: repeat-y;
+      }
+      #space {
+        background-image: url("pencil-png-1.png");
+        background-repeat: space;
+      }
+      #round {
+        background-image: url("pencil-png-1.png");
+        background-repeat: round;
+      }
+      #no-repeat {
+        background-image: url("pencil-png-1.png");
+        background-repeat: no-repeat;
+      }
+      #initial {
+        background-image: url("pencil-png-1.png");
+        background-repeat: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Bg Repeat (background-repeat: repeat)</h4>
+    <div id="repeat"></div>
+
+    <h4>Bg Repeat (background-repeat: repeat-x)</h4>
+    <div id="repeat-x"></div>
+
+    <h4>Bg Repeat (background-repeat: repeat-y)</h4>
+    <div id="repeat-y"></div>
+
+    <h4>Bg Repeat (background-repeat: space)</h4>
+    <div id="space"></div>
+
+    <h4>Bg Repeat (background-repeat: round)</h4>
+    <div id="round"></div>
+
+    <h4>Bg Repeat (background-repeat: no-repeat)</h4>
+    <div id="no-repeat"></div>
+
+    <h4>Bg Repeat (background-repeat: initial)</h4>
+    <div id="initial"></div>
+  </body>
+</html>

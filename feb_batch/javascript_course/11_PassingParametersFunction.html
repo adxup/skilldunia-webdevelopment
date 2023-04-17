@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+      // function definition with arguments
+      function dataAccess(n1, n2) {
+        document.write(`the value of n1: ${n1} <br />`);
+        document.write(`the value of n2: ${n2} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // coding begins
+
+        // global variables
+        let num1 = 4;
+        let num2 = 6;
+
+        let res = 0;
+
+        // function call with parameters
+        dataAccess(num1, num2);
+
+        num1 = 2;
+        num2 = 7;
+
+        dataAccess(num1, num2);
+      </script>
+    </div>
+  </body>
+</html>

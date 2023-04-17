@@ -1,0 +1,29 @@
+-> What is Block, Element and Modifier?
+    - It is a naming convention for css class name's
+
+-> Benefits: 
+    - It is a component structure
+    - sets a consistent low - level of specificity for styling selectors
+
+-> Advantages:
+    - easy to maintain
+    - class names are logical and intuitive
+    - eliminates nested css selectors
+
+-> What exactly the B, E and M stands and say?
+    - B: the parent Element of the component is defined as a block
+    - E: inside of the component may be one or more children called elements
+    - M: either a Block or Element may have a variation signed by a Modifier
+
+-> Syntax:
+    [block]__[element]--[modifier]
+
+-> BEM Methodology:
+    - Block: 
+    ex., .content {}, .menu {}, .search-form {}
+
+    - Element: 
+    ex., .content__article {}, .menu__item {}, .search-form__input {}
+
+    - Modifier: 
+    ex., .content__article--featured {}, .menu__item--link {}, .search-form__input--icon {}

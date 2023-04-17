@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+      function myFunc() {
+        document.write(`the myFunc is executed`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" id="myBtn">Click this Button</button>
+      <script>
+        // body part js script
+        var btn = document.getElementById("myBtn");
+        btn.addEventListener("click", myFunc);
+      </script>
+    </div>
+  </body>
+</html>

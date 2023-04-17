@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+      class Person {
+        constructor(personId, personName) {
+          this.personId = personId;
+          this.personName = personName;
+        }
+      }
+
+      class Employee extends Person {
+        constructor(
+          personId,
+          personName,
+          employeeCode,
+          employeeDesg,
+          employeeSalary
+        ) {
+          super(personId, personName);
+          this.employeeCode = employeeCode;
+          this.employeeDesg = employeeDesg;
+          this.employeeSalary = employeeSalary;
+        }
+
+        getEmployeeDetails() {
+          document.getElementById("showEmp").innerHTML += `
+                Person Details <br />
+                ------------------------------------ <br />
+                personId: ${this.personId} <br /> 
+                personName: ${this.personName} <br />
+
+                <br />
+
+                Employee Details <br />
+                ------------------------------------- <br />
+                employeeCode: ${this.employeeCode} <br />
+                employeeDesg: ${this.employeeDesg} <br />
+                employeeSalary: ${this.employeeSalary} <br />
+            `;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showEmp"></div>
+      <script>
+        // body part js script
+        let emp1 = new Employee(145, "john", "empC754", "Hr", "$6548");
+        emp1.getEmployeeDetails();
+
+        let emp2 = new Employee(554, "paul", "empC246", "Dev", "$8453");
+        emp2.getEmployeeDetails();
+      </script>
+    </div>
+  </body>
+</html>

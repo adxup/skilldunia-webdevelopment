@@ -1,0 +1,4 @@
+-> What is CSS?
+    - CSS full form: Cascading Style Sheets
+    - Used to Apply the Styles to the Html Content
+

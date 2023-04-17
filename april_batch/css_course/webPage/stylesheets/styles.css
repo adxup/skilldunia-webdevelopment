@@ -1,0 +1,82 @@
+/* styles */
+:root {
+  --page-background-color: #eaecee;
+  --page-font-color: #000;
+  --page-font-family: inherit;
+  --page-margin: 0px;
+  --page-padding: 0px;
+  --all-headings-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --all-p-lists-font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  --content-background-color: #fff;
+}
+
+* {
+  margin: 0px auto;
+}
+
+html,
+body {
+  padding: var(--page-padding);
+  margin: var(--page-margin);
+}
+
+body {
+  background-color: var(--page-background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--all-headings-font-family);
+}
+
+p {
+  font-family: var(--all-p-lists-font-family);
+}
+
+.wrapper {
+  background-color: var(--content-background-color);
+  width: 992px;
+  padding: 0px 15px;
+}
+
+.header {
+  width: 992px;
+}
+
+.header-banner {
+  width: 992px;
+}
+
+/* navigation */
+.navigation {
+  width: 992px;
+  height: 30px;
+  background-color: lightgray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #000;
+}
+
+ul li a:hover {
+  color: #f00;
+}

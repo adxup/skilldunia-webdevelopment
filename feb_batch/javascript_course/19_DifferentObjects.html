@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+      function windowObject() {
+        document.write(
+          `width: ${document.documentElement.clientWidth} and height: ${document.documentElement.clientHeight} <br />`
+        );
+
+        document.write(
+          `innerwidth: ${window.innerWidth} and innerheight: ${window.innerHeight} <br />`
+        );
+      }
+
+      function screenObject() {
+        document.write(
+          `the screen width: ${screen.width}, and height: ${screen.height} <br />`
+        );
+
+        document.write(
+          `the screen availwidth: ${screen.availWidth}, and availheight: ${screen.availHeight} <br />`
+        );
+      }
+
+      function locationObject() {
+        document.write(`href: ${window.location.href} <br />`);
+        document.write(`protocol: ${window.location.protocol} <br />`);
+        document.write(`host: ${window.location.host} <br />`);
+        document.write(`hostname: ${window.location.hostname} <br />`);
+        document.write(`portnumber: ${window.location.port} <br />`);
+      }
+
+      function loadingDocuments() {
+        window.location.assign("http://www.google.com");
+      }
+
+      function historyObjects() {
+        document.write(
+          `no of times you have accessed the page in this session: ${history.length} <br />`
+        );
+
+        // history.back();
+        // history.forward();
+        // history.go(2);
+        // history.go(-5);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // coding begins
+        windowObject();
+        screenObject();
+        locationObject();
+        // loadingDocuments();
+        historyObjects();
+      </script>
+    </div>
+  </body>
+</html>

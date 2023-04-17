@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // body part js script
+        let num1 = 3;
+        let num2 = 8;
+
+        let res = 0;
+
+        document.write(`the value of num1: ${num1} <br />`);
+        document.write(`the value of num2: ${num2} <br />`);
+
+        // arithmatic operators
+        // binary: +, -, *, /, %
+        res = num1 * num2;
+        document.write(`the value of res: ${res} <br />`);
+
+        // unary: ++, --
+        document.write(`the value of num1: ${num1} <br />`);
+        num1++;
+        document.write(`the value of num1: ${num1} <br />`);
+
+        // assignment operators: +=, -=, *=, /=, %=
+        document.write(`the value of num1: ${num1} <br />`);
+        num1 += num2;
+        document.write(`the value of num1: ${num1} <br />`);
+
+        // comparison operators: ==, !=, <, >, <=, >=, ===, !==
+        let x = 5;
+        let y = "5";
+        let z = 5.0;
+
+        document.write(
+          `the value of x: ${x} and its datatype: ${typeof x} <br />`
+        );
+        document.write(
+          `the value of y: ${y} and its datatype: ${typeof y} <br />`
+        );
+        document.write(
+          `the value of z: ${z} and its datatype: ${typeof z} <br />`
+        );
+
+        res = x === y;
+        document.write(`the value of res: ${res} <br />`);
+
+        // conditional operators: () ? .... : ....
+        res =
+          x == y
+            ? "the value of x and y are equal"
+            : "the value of x and y are not equal";
+
+        document.write(`the value of res: ${res} <br />`);
+
+        // logical operators: &&, ||, !
+        res = y === z && z >= x;
+        document.write(`the res with &&: ${res} <br />`);
+
+        res = y === z || z >= x;
+        document.write(`the res with ||: ${res} <br />`);
+
+        res = !(y === z && z >= x);
+        document.write(`the res with &&: ${res} <br />`);
+
+        res = !(y === z || z >= x);
+        document.write(`the res with ||: ${res} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

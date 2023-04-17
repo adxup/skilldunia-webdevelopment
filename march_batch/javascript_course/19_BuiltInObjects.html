@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+      function windowObject() {
+        document.write(
+          `the window size width: ${window.innerWidth} and height: ${window.innerHeight} <br />`
+        );
+
+        document.write(
+          `the window size clientWidth: ${document.documentElement.clientWidth}, and clientHeight: ${document.documentElement.clientHeight} <br />`
+        );
+      }
+
+      function screenObject() {
+        document.write(
+          `the screen size Width: ${screen.width}, and Height: ${screen.height} <br />`
+        );
+
+        document.write(
+          `the screen size availWidth: ${screen.availWidth}, and availHeight: ${screen.availHeight} <br />`
+        );
+      }
+
+      function locationObject() {
+        document.write(`href: ${window.location.href} <br />`);
+        document.write(`protocol: ${window.location.protocol} <br />`);
+        document.write(`host: ${window.location.host} <br />`);
+      }
+
+      function loadDocuments() {
+        window.location.assign("http://www.google.com");
+      }
+
+      function historyObjects() {
+        document.write(
+          `you have accessed ${history.length} the web page in this session <br />`
+        );
+
+        // document.write(`goBack: ${window.history.back()}`);
+        // document.write(`goForward: ${window.history.forward()}`);
+        // document.write(`specificPage: ${window.history.go(-2)}`);
+      }
+
+      function navigatorObject() {
+        if (navigator.cookieEnabled) {
+          document.write(`cookieEnabled <br />`);
+        } else {
+          document.write(`cookieDisabled <br />`);
+        }
+      }
+
+      function dateTimeObject() {
+        var dt = new Date();
+        document.write(`the dt: ${dt} <br />`);
+
+        // dt = new Date("29 March 2023");
+        // document.write(`the dt: ${dt} <br />`);
+
+        document.write(`getDate(): ${dt.getDate()} <br />`);
+
+        dt.setDate(dt.getDate() + 12);
+        document.write(`the dt: ${dt} <br />`);
+      }
+
+      function mathObject() {
+        document.write(`PI: ${Math.PI} <br />`);
+        document.write(`floor(): ${Math.floor(2.4)} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // body part js script
+        // window object
+        windowObject();
+        screenObject();
+        locationObject();
+        // loadDocuments();
+        historyObjects();
+        navigatorObject();
+        dateTimeObject();
+        mathObject();
+      </script>
+    </div>
+  </body>
+</html>

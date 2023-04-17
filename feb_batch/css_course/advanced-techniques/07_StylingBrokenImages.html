@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Broken Images</title>
+    <style>
+      img {
+        font-family: inherit;
+        font-weight: 300;
+        line-height: 2em;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+      }
+
+      img::before {
+        content: "we are sorry, the image is broken :(";
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      img::after {
+        content: "(url: " attr(src) ")";
+        display: block;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="myImg.png" />
+  </body>
+</html>

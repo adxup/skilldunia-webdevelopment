@@ -1,0 +1,64 @@
+-> Javascript is a Open Source Client Side or Frontend Development Scripting Language
+
+-> Javascript can do:
+    1. Loading the Data Dynamically
+    2. Making an Interactivity to your WebPages
+    3. Creating & Styling to the WebPages
+    4. Creating Animations
+
+-> Getting Started: 
+    1. External
+    2. Embedded
+    3. Inline
+
+-> Displaying Content
+    1. document.write()
+    2. console.log()
+    3. dialog boxes: 
+        alert()
+        confirm()
+        prompt()
+
+-> Comment: 
+    1. Single Line - // ...........
+    2. Multi Line - /* .... */
+
+-> Data Types:
+    1. Primitive Data Types
+        1. Number
+        2. String 
+        3. Boolean 
+
+    2. Non Primitive Data Types
+        1. Array
+        2. Function
+        3. Object Oriented Class & Object
+
+-> Identifiers: 
+    ex., num1, n1, _num1, fullName
+
+-> Keywords:
+    ex., and, try, async, if, etc., 
+
+-> Declaring the Variables: 
+    1. var
+    2. let 
+    3. const
+
+-> Operators:
+    1. Arithmatic
+    2. Assignment
+    3. Comparison (Relational) 
+    4. Conditional (Ternary)
+    5. Logical
+
+-> Statements: 
+    1. Decision Making Statements
+    2. Loop Statements
+
+-> Arrays:
+-> Functions: 
+
+-> DOM: 
+
+    

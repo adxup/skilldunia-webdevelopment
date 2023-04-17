@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+      function myFunc() {
+        let a = 9;
+        let b = 0;
+
+        try {
+          let c = a * b;
+          if (c) {
+            document.write(`the value of c: ${c} <br />`);
+          } else {
+            throw new Error(`the c value is an invalid <br />`);
+          }
+        } catch (err) {
+          document.write(err);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" onclick="myFunc()">Click the Button</button>
+      <script>
+        // body part js script
+      </script>
+    </div>
+  </body>
+</html>

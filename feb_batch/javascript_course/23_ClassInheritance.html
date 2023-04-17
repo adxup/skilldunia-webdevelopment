@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+      class Person {
+        constructor(pId, pName) {
+          this.pId = pId;
+          this.pName = pName;
+        }
+      }
+
+      class Employee extends Person {
+        constructor(pId, pName, empCode, empDesg, empSalary) {
+          super(pId, pName);
+          this.empCode = empCode;
+          this.empDesg = empDesg;
+          this.empSalary = empSalary;
+        }
+
+        getEmp() {
+          document.getElementById("showEmp").innerHTML += `
+                Person Details are: <br />
+                ---------------------------------------------- <br />
+                { <br />
+                    personId: ${this.pId} <br />
+                    personName: ${this.pName} <br />
+                } <br />
+
+                Employee Details are: <br />
+                ---------------------------------------------- <br />
+                { <br />
+                    empCode: ${this.empCode} <br /> 
+                    empDesg: ${this.empDesg} <br /> 
+                    empSalary: ${this.empSalary} <br />
+                    <br />
+                } <br /> <br />
+            `;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showEmp"></div>
+      <script>
+        // coding begins
+        let emp1 = new Employee(1, "john", "emp463", "Hr", "$5432");
+        emp1.getEmp();
+
+        let emp2 = new Employee(2, "paul", "emp286", "Dev", "$7547");
+        emp2.getEmp();
+      </script>
+    </div>
+  </body>
+</html>

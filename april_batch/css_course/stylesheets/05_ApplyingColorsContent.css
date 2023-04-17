@@ -1,0 +1,19 @@
+h1 {
+  color: #8a2be2;
+}
+
+h3 {
+  color: rgb(112, 132, 126);
+}
+
+h4 {
+  color: rgb(213, 189, 158);
+  opacity: 0.7;
+  background-color: #2d3fa5;
+}
+
+p {
+  color: #d2691e;
+  background-color: rgba(173, 128, 194, 0.2);
+  border: 2px solid #81ae2f;
+}

@@ -1,0 +1,37 @@
+-> What is HTML?
+    - The Full Form of HTML - Hyper Text Markup Language
+    - It is used to Create the Structure of a Web Page
+    - Web Page: a Page which loads into your Client (Browser) from the Server
+        - Which consisting of: Text, Images, Videos, Audios, Links, Lists, Forms etc., 
+
+-> How we can Create the Structure of Web Page?
+    - 2 Important Points:
+        1. Elements
+            - An Element is a Name, which is used to Represent the Format of a Content
+            - There are 2 Types of Elements
+                1. Block 
+                    Syntax: 
+                        <elementName>
+                            ......
+                            ......
+                        </elementName>
+                    Eg., <p> .... </p>, <div> ... </div>
+
+                2. Inline 
+                    Syntax: 
+                        <elementName />
+
+        2. Attributes
+            - The Attribute is used to add the Additional Specifications or Characteristics or Features to the Elements
+                1. Block 
+                    Syntax: 
+                        <elementName attributeName="itsValue" attributeName>
+                            ......
+                            ......
+                        </elementName>
+                    Eg., <p> .... </p>, <div> ... </div>
+
+                2. Inline 
+                    Syntax: 
+                        <elementName attributeName="itsValue" attributeName />
+                    Eg., <input type="text" />, <hr />, <img />

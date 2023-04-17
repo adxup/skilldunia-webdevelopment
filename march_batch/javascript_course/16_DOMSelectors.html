@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with an id = mark</p>
+      <p>this is another para</p>
+
+      <p class="test">this is a para with class = test</p>
+      <p class="block test">
+        this is another para with two classes = block and test
+      </p>
+
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li class="tick">Services</li>
+        <li>Portfolio</li>
+        <li>Contact Us</li>
+      </ul>
+      <script>
+        // body part js script
+
+        // selecting the elements by id
+        var match = document.getElementById("mark");
+        match.style.backgroundColor = "#000";
+        match.style.color = "#fff";
+
+        // selecting the elements by class
+        var matches = document.getElementsByClassName("test");
+        document.write(`the matches: ${matches.length} <br />`);
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "lightblue";
+          matches[i].style.color = "white";
+        }
+      </script>
+    </div>
+  </body>
+</html>

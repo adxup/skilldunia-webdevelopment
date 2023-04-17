@@ -1,0 +1,34 @@
+what is html?
+    - html stands for hyper text markup language
+    - it is used to create the structure of the web page
+    - page which can have a content in different formats
+        text, image, link, input, etc., 
+
+the things helps to create a content:
+    - elements
+        - is a name which is used to re-present the content
+        - two types of elements
+            - block
+                <elementName>
+                    ....
+                    .....
+                </elementName>
+                <p> ..... </p>, <div> ..... </div>
+
+            - inline
+                <elementName />
+                <img />, <input />
+
+    - attributes
+        - used to add the characteristics of the elements
+        - two types of elements
+            - block
+                <elementName attributeName="itsValue" attributeName>
+                    ....
+                    .....
+                </elementName>
+                <p> ..... </p>, <div> ..... </div>
+
+            - inline
+                <elementName attributeName="itsValue" attributeName />
+                <img />, <input />

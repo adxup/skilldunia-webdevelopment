@@ -1,0 +1,19 @@
+body {
+  background-color: azure;
+}
+
+/* h1 {
+  text-align: center;
+} */
+
+p {
+  text-align: justify;
+  line-height: normal;
+  color: #45a;
+  border-bottom: 1px solid rgb(156, 185, 158);
+}
+
+li {
+  list-style: none;
+  border-bottom: 1px solid rgb(156, 185, 158);
+}

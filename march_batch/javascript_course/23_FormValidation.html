@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      .showErr {
+        color: #f00;
+      }
+    </style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form name="frm" method="post" action="#" onsubmit="return checkForm()">
+        <table border="1px">
+          <tr>
+            <td>User Name</td>
+            <td>
+              <input type="text" name="userName" value="" />
+              <div id="userNameErr" class="showErr"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Email Address</td>
+            <td>
+              <input type="text" name="emailAddress" value="" />
+              <div id="emailAddressErr" class="showErr"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>
+              <input type="text" name="password" value="" />
+              <div id="passwordErr" class="showErr"></div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" name="submit" value="submit" /></td>
+          </tr>
+        </table>
+      </form>
+      <script>
+        // body part js script
+      </script>
+    </div>
+  </body>
+</html>

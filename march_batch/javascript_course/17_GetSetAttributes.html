@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Concepts</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      // head part js script
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="https://www.google.com" target="_blank">go to Google</a>
+
+      <br />
+
+      <button type="button" id="myBtn">Click the Button</button>
+
+      <br />
+
+      <a href="http://www.bing.com" id="myLink">its an another Anchor link</a>
+
+      <br />
+
+      <script>
+        // body part js script
+        // selecting the element by Id attribute
+        var link = document.getElementById("myLink");
+
+        // getting the element's attribute value
+        var href = link.getAttribute("href");
+        document.write(`the href attribute: ${href} <br />`);
+
+        // setting the attribute to element
+        var btn = document.getElementById("myBtn");
+        btn.setAttribute("class", "clickBtn");
+        btn.setAttribute("style", "color: blue");
+
+        // removing the attribute value
+        link.removeAttribute("href");
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+h1 {
+  color: #8a2be2;
+}
+
+h3,
+h4 {
+  color: rgb(112, 132, 126);
+}
+
+h4 {
+  /* opacity: 0.7; */
+  background-color: #2d3fa5;
+}
+
+p {
+  color: #d21e;
+  background-color: rgba(173, 128, 194, 0.2);
+  border: 2px solid #81ae2f;
+}
+
+/* 
+mystyle, MYSTYLE, MyStyle, myStyle (this), Mystyle, my_style, _mystyle, _myStyle
+*/
+
+/* class Styling */
+.myParaStyle {
+  color: #1fa4da;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.specifyMyContent {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+li.listItem {
+  font-size: 18px;
+  padding: 10px;
+  border-bottom: 2px solid #d0c;
+}
+
+.highLightListItem {
+  list-style: none;
+}
+
+/* id Styling */
+#myParaStyle1 {
+  color: #1fa4da;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#specifyMyContent1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+li#listItem1 {
+  font-size: 18px;
+  padding: 10px;
+  border-bottom: 2px solid #d0c;
+}
+
+#highLightListItem1 {
+  list-style: none;
+}

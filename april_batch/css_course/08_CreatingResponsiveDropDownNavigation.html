@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Responsive Drop Down Navigation</title>
+    <link
+      rel="stylesheet"
+      href="stylesheets/08_CreatingResponsiveDropDownNavigation.css"
+    />
+  </head>
+  <body>
+    <nav class="jmenu">
+      <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
+      <input type="checkbox" id="menu-btn" class="jm-menu-btn" />
+      <ul class="jm-collapse">
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li class="jm-dropdown">
+          <a href="javascript:void(0)">Categories</a>
+          <ul>
+            <li><a href="javascript:void(0)">Apples</a></li>
+            <li><a href="javascript:void(0)">Bananas and Pears</a></li>
+            <li><a href="javascript:void(0)">Oranges</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

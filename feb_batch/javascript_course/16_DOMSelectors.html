@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with id 'mark'</p>
+      <p>this is another para ofcourse with no id</p>
+
+      <p class="test">this is a para with class 'test'</p>
+      <p class="block test">
+        this is another para with 2 classes 'block' and 'test'
+      </p>
+
+      <p>this is another para with tagName</p>
+
+      <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li class="tick">services</li>
+        <li>portfolio</li>
+        <li>contact us</li>
+      </ul>
+      <script>
+        // coding begins
+
+        document.write(
+          `the html's lang attribute value: ${document.documentElement.getAttribute(
+            "lang"
+          )} <br />`
+        );
+
+        document.body.style.backgroundColor = "#f3f";
+
+        document.write(
+          `tagName of the head Element's First Child Node Name: ${document.head.firstElementChild.nodeName} <br />`
+        );
+
+        var matchId = document.getElementById("mark");
+        document.write(`the selected Element by Id: ${matchId} <br />`);
+
+        var matchesClassName = document.getElementsByClassName("test");
+        document.write(
+          `the selected Elements by className: ${matchesClassName} <br />`
+        );
+        document.write(
+          `the no of items matched: ${matchesClassName.length} <br />`
+        );
+
+        var matchesTagName = document.getElementsByTagName("p");
+        document.write(
+          `the selected Elements by tagName: ${matchesTagName} <br />`
+        );
+        document.write(
+          `the no of items matched: ${matchesTagName.length} <br />`
+        );
+
+        var matches = document.querySelectorAll("li");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(`the no of items matched: ${matches.length} <br />`);
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "lightblue";
+        }
+      </script>
+    </div>
+  </body>
+</html>

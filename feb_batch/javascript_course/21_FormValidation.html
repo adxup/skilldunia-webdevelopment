@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      .errorMessage {
+        color: #f00;
+      }
+    </style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // coding begins
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h4>Form Validation</h4>
+
+      <form
+        name="frm"
+        method="post"
+        action="#"
+        onsubmit="return formValidation()"
+      >
+        <table border="1px">
+          <tr>
+            <td>User Name</td>
+            <td>
+              <input
+                type="text"
+                name="userName"
+                value=""
+                placeholder="eg., johnpaul"
+                id="userName"
+              />
+
+              <div id="userNameErr" class="errorMessage"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Email Address</td>
+            <td>
+              <input
+                type="text"
+                name="emailAddress"
+                value=""
+                placeholder="eg., johnpaul@gmail.com"
+                id="emailAddress"
+              />
+
+              <div id="emailAddressErr" class="errorMessage"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Mobile Number</td>
+            <td>
+              <input
+                type="text"
+                name="mobileNumber"
+                value=""
+                placeholder="eg., (+44) 964 4567"
+                id="mobileNumber"
+              />
+
+              <div id="mobileNumberErr" class="errorMessage"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="submit" name="submit" value="submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <script>
+        // coding begins
+      </script>
+    </div>
+  </body>
+</html>
