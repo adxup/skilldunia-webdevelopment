@@ -1,0 +1,32 @@
+-> what is css and its use?
+    1. css stands for cascading style sheets
+    2. used to apply the styles to the html content
+
+the commonly used terminology: property
+syntax: propertyName: itsValue;
+example: color: red;
+
+-> to apply the styles to the content: 
+    - we have 3 different ways
+    1. inline styles
+    2. embedded styles
+    3. external styles
+
+-> how many colors?
+    - around 256 colors
+    - categorized into 3 different ways
+        1. name 
+        2. numerical
+        3. hexadecimal
+            #... (3 chars)
+            #.... (4 chars)
+            #...... (6 chars)
+
+            a - f / A - F
+            0 - 9
+
+            #3af
+
+-> custom styling:
+    1. class 
+    2. id

@@ -1,0 +1,23 @@
+body {
+    background-color: #EAECEE;
+}
+
+p {
+    color: #808B96;
+}
+
+.para_style {
+    background-color: #17202A;
+}
+
+.box_effect {
+    border: 1px solid #f00;
+}
+
+#para_style {
+    background-color: #17202A;
+}
+
+#box_effect {
+    border: 1px solid #f00;
+}

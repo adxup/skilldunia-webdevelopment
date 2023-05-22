@@ -1,0 +1,15 @@
+p {
+    background-color: blanchedalmond;
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+    line-height: 28px;
+    border-bottom: 1px solid black;
+    color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+}
