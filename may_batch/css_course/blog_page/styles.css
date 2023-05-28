@@ -1,0 +1,82 @@
+/* general styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+/* header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* navigation styles */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+nav ul li a:hover {
+  background-color: #ccc;
+}
+
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  padding: 0;
+  z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul li .dropdown li {
+  display: block;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 3;
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
