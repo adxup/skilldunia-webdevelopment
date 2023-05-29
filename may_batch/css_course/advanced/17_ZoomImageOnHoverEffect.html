@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #fcfcfc;
+      }
+
+      .wrapper {
+        width: 992px;
+        margin: 0px auto;
+        background-color: #fff;
+      }
+
+      .zoom-effect-container {
+        width: 250px;
+        height: auto;
+        float: left;
+        margin: 10px;
+        position: relative;
+      }
+
+      .zoom-effect-container > .image-card {
+        border: 1px solid #000;
+        position: absolute;
+      }
+
+      img {
+        width: 250px;
+        object-fit: cover;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        transform: scale(1);
+      }
+
+      img:hover {
+        transition: all 0.3s ease;
+        transform: scale(2);
+      }
+
+      .clr {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="zoom-effect-container">
+        <div class="image-card">
+          <img src="images/clipart.png" alt="" title="" />
+        </div>
+      </div>
+      <div class="zoom-effect-container">
+        <div class="image-card">
+          <img src="images/illustration.png" alt="" title="" />
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </body>
+</html>

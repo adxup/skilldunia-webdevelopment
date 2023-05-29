@@ -1,0 +1,5 @@
+-> What is Javascript?
+    - Javascript is an client side open source scripting language
+    - Used to create the more interactivity to the web pages
+
+-> 
