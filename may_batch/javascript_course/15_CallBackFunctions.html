@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // code of javascript
+      function doDisplay(someVal) {
+        document.getElementById(
+          "showOutput"
+        ).innerHTML = `the callBack Res: ${someVal} <br />`;
+      }
+      function doCalc(n1, n2, callBack) {
+        let res = 0;
+        res = n1 ** n2;
+        callBack(res);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showOutput"></div>
+      <script>
+        // code of javascript
+        // call back functions
+        let num1 = 6;
+        let num2 = 8;
+
+        doCalc(num1, num2, doDisplay);
+      </script>
+    </div>
+  </body>
+</html>

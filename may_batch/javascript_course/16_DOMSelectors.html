@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // code of javascript
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with an id - mark</p>
+      <p>this is a simple para element</p>
+
+      <p class="test">this is a para with a class test</p>
+      <p class="block test">this is a para with a class's block and test</p>
+
+      <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li class="tick">services</li>
+        <li>portfolio</li>
+        <li>contact us</li>
+      </ul>
+
+      <hr />
+
+      <script>
+        // code of javascript
+        // selecting the element with an Id
+        var match = document.getElementById("mark");
+        match.style.backgroundColor = "#fea";
+
+        var matches = document.getElementsByClassName("test");
+        document.write(`the no of matches: ${matches.length} <br />`);
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.color = "red";
+        }
+      </script>
+    </div>
+  </body>
+</html>

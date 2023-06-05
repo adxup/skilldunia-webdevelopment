@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // code of javascript
+      // function definition
+      function doCalc() {
+        let num1 = 3.8;
+        let num2 = 8.2;
+
+        let res = 0;
+
+        res = num1 / num2;
+        document.getElementById(
+          "showRes"
+        ).innerHTML = `the value of res: ${res} <br />`;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showRes"></div>
+      <script>
+        // code of javascript
+
+        // function call
+        doCalc();
+      </script>
+    </div>
+  </body>
+</html>

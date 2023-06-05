@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // code of javascript
+      // function definition with arguments
+      function doCalc(n1, n2) {
+        // local variable
+        let res = 0;
+
+        res = n1 / n2;
+        document.getElementById(
+          "showRes"
+        ).innerHTML += `passing parameters: the value of res: ${res} <br />`;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showRes"></div>
+      <script>
+        // code of javascript
+        // global variables
+        let num1 = 6;
+        let num2 = 9;
+
+        // function call with parameters
+        doCalc(num1, num2);
+
+        num1 = 4;
+        num2 = 8;
+
+        doCalc(num1, num2);
+      </script>
+    </div>
+  </body>
+</html>
