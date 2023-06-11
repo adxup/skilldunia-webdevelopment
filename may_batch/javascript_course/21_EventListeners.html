@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // code of javascript
+      function execFunc1() {
+        document.getElementById(
+          "btnRes1"
+        ).innerHTML = `displaying the result in a particular selector when user clicked on button1!!`;
+      }
+
+      function execFunc2() {
+        document.getElementById(
+          "btnRes2"
+        ).innerHTML = `displaying the result in a particular selector when user clicked on button2!!`;
+      }
+
+      function execFunc3() {
+        document.getElementById(
+          "btnRes3"
+        ).innerHTML = `displaying the result in a particular selector when user clicked on button3!!`;
+      }
+
+      function setHoverFunc() {
+        document.getElementById("myBtn3").style.backgroundColor = "#fe2";
+        document.getElementById("myBtn3").style.color = "#621";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" onclick="execFunc1()">Click on Button!!</button>
+
+      <div id="btnRes1"></div>
+
+      <button type="button" id="myBtn2">Click on Button2!!</button>
+
+      <div id="btnRes2"></div>
+
+      <button type="button" id="myBtn3">Click on Button3!!</button>
+
+      <div id="btnRes3"></div>
+      <script>
+        // code of javascript
+        var btn2 = document.getElementById("myBtn2");
+        btn2.onclick = execFunc2;
+
+        var btn3 = document.getElementById("myBtn3");
+        btn3.addEventListener("click", execFunc3);
+        btn3.addEventListener("mouseover", setHoverFunc);
+
+        btn3.removeEventListener("click", execFunc3);
+      </script>
+    </div>
+  </body>
+</html>

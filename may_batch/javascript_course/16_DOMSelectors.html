@@ -43,6 +43,16 @@
         for (let i = 0; i < matches.length; i++) {
           matches[i].style.color = "red";
         }
+
+        var matches = document.getElementsByTagName("p");
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.fontWeight = "bold";
+        }
+
+        var matches = document.querySelectorAll("li.tick");
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.textDecoration = "line-through";
+        }
       </script>
     </div>
   </body>

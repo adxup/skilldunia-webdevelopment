@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // code of javascript
+      class UserDetails {
+        constructor(userId, userName, userEmail, userMobile) {
+          this.userId = userId;
+          this.userName = userName;
+          this.userEmail = userEmail;
+          this.userMobile = userMobile;
+        }
+
+        getDetails() {
+          let userData = ` <br />
+                User Details <br />
+                ----------------------------- <br />
+                UserId: ${this.userId} <br />
+                UserName: ${this.userName} <br /> 
+                UserEmail: ${this.userEmail} <br />
+                UserMobile: ${this.userMobile}
+            `;
+
+          document.getElementById("userRecord").innerHTML += userData;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="userRecord"></div>
+      <script>
+        // code of javascript
+        let user1 = new UserDetails(
+          637,
+          "john",
+          "john@gmail.com",
+          "+(446) 356 3789"
+        );
+
+        user1.getDetails();
+
+        let user2 = new UserDetails(
+          963,
+          "paul",
+          "paul@gmail.com",
+          "+(558) 258 2794"
+        );
+
+        user2.getDetails();
+      </script>
+    </div>
+  </body>
+</html>

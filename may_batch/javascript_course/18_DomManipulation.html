@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <script src="customScripts.js"></script>
+    <script>
+      // code of javascript
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="main">
+        <h1 id="title">this is heading with an id as title</h1>
+        <p id="hint">this is parawith an id as hint</p>
+      </div>
+      <script>
+        // code of javascript
+        var newDiv = document.createElement("div");
+        var newContent = document.createTextNode("this is a textNode");
+        newDiv.appendChild(newContent);
+
+        var currentDiv = document.getElementById("main");
+        // document.body.appendChild(newDiv, currentDiv);
+
+        currentDiv.insertAdjacentHTML("beforebegin", newDiv);
+      </script>
+    </div>
+  </body>
+</html>
