@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Data</title>
+    <style>
+      table {
+        font-family: inherit;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #ddd;
+      }
+
+      input[type="text"],
+      button[type="submit"] {
+        margin: 1px 2px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 3px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h4>User Data</h4>
+      <hr />
+      <table>
+        <tr>
+          <th>User ID</th>
+          <th>User Name</th>
+          <th>User Email</th>
+          <th>User Age</th>
+          <th>Actions</th>
+        </tr>
+        <% data.forEach(element => { %>
+        <tr>
+          <td><%=element.userId%></td>
+          <td><%=element.userName%></td>
+          <td><%=element.userEmail%></td>
+          <td><%=element.userAge%></td>
+          <td>
+            <form action="/delete" method="post">
+              <input type="text" name="userId" value="<%=element.userId%>" />
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        <% }) %>
+      </table>
+
+      <hr />
+
+      <h4>Add New User</h4>
+
+      <hr />
+
+      <form method="post" action="/">
+        <input type="text" name="userId" placeholder="eg., enter user Id" />
+        <input type="text" name="userName" placeholder="eg., enter user Name" />
+        <input
+          type="text"
+          name="userEmail"
+          placeholder="eg., enter user Email"
+        />
+        <input type="text" name="userAge" placeholder="eg., enter user Age" />
+        <button type="submit">submit</button>
+      </form>
+
+      <hr />
+
+      <h4>Update User</h4>
+
+      <hr />
+
+      <form method="post" action="/update">
+        <input type="text" name="userId" placeholder="eg., enter user Id" />
+        <input type="text" name="userName" placeholder="eg., enter user Name" />
+        <input
+          type="text"
+          name="userEmail"
+          placeholder="eg., enter user Email"
+        />
+        <input type="text" name="userAge" placeholder="eg., enter user Age" />
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
