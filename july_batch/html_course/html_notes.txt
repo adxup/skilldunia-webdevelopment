@@ -1,0 +1,17 @@
+-> what is html?
+    - html stands for hyper text markup language
+    - it is used to create the structure of a web page
+
+    - the 2 important points that we have to remember:
+        1. elements (tags)
+        2. attributes
+
+-> what is an element?
+    - an element is a name which is used to create the particular format of a content
+    - there are 2 types of elements:
+        1. block
+        2. inline
+
+-> what is an attribute?
+    - an attribute is a characteristic or a property of an element
+    
