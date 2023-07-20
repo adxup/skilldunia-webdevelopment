@@ -1,0 +1,9 @@
+-> What is Javascript?
+    - Javascript is an Open Source Client Side Scripting Language
+    - It is used to:
+        1. Apply the Styles Dynamically to the Html Content
+        2. Load the Data Dynamically in to the Html Selectors
+        3. Create / Delete / Edit the Elements 
+        4. Event Handling: Click, Hover, etc.,
+
+-> How to use Javascript

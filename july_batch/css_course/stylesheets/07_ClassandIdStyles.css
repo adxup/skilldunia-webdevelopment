@@ -1,0 +1,30 @@
+/* p {
+  color: black;
+} */
+
+/* class */
+p.content {
+  color: red;
+}
+
+.box {
+  width: 320px;
+  border: 2px solid red;
+}
+
+/* id */
+#userRecord {
+  background-color: lightcoral;
+  border: 2px solid red;
+  width: 320px;
+}
+
+#userFields {
+  font-weight: bold;
+  text-align: center;
+}
+
+div.userContent {
+  color: #fff;
+  padding: 10px 20px;
+}

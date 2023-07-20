@@ -1,0 +1,22 @@
+-> what is css and it's use?
+    - css stands for cascading style sheets
+    - it is used to apply the styles to the html content
+
+-> how to use css in html?
+    - there are 3 ways
+        1. inline
+        2. embedded
+        3. external
+
+-> comment
+-> colors
+    1. name: red, green, 
+    2. numerical: 0 to 255
+        rgb(0, 0, 0)
+        rgb(255, 255, 255)
+        rgb(123, 214, 197)
+    3. hexadecimal
+        0 - 9; a - f;
+        #3a5
+        #baf7
+        #a6d38a

@@ -14,4 +14,23 @@
 
 -> what is an attribute?
     - an attribute is a characteristic or a property of an element
-    
+
+-> formatting elements
+    - p, h1 to h6, strong, a, br, u, i, img
+
+-> listings:
+    - order list
+    - unorder list
+    - definition list
+
+-> table
+-> form
+-> media objects
+-> semantic elements
+    main
+    header
+    footer
+    nav
+    section
+    article
+    aside
