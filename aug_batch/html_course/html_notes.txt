@@ -1,0 +1,62 @@
+-> what is html?
+    - html stands for hyper text markup language
+    - it is used to create the web pages
+    - a web page can have different formats of content: text, images, audio, video, links, lists, input etc., 
+
+-> to create a content in html., 
+    - we have 2 important things to discuss
+    1. elements / tags
+    2. attributes
+
+-> what is an element?
+    - an element is used to display the particular representation of content
+    - there are 2 types of elements
+        1. block 
+            syntax:
+            <elementName>
+                .....
+                .....
+            </elementName>
+            examples: 
+            p, div, span, h1, 
+
+        2. inline 
+            syntax: 
+            <elementName />
+            examples:
+            input, img, 
+
+-> attribute:
+    - an attribute is a name which is used to add the property(s) / characteristics / specifications to the html element
+    - there are 2 types of elements
+        1. block 
+            syntax:
+            <elementName attributeName = "itsValue" attributeName>
+                .....
+                .....
+            </elementName>
+            examples: 
+            p, div, span, h1, 
+
+        2. inline 
+            syntax: 
+            <elementName attributeName = "itsValue" attributeName />
+            examples:
+            input, img, 
+
+-> Table
+-> Images
+-> Listings
+-> Form
+-> Media Objects
+-> Semantic Elements:
+    header
+    footer
+    main
+    nav
+    section
+    article
+    figure
+    video 
+    audio
+    aside

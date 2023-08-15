@@ -1,0 +1,34 @@
+body {
+  line-height: 1em;
+  background-color: lightcyan;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+p {
+  font-size: 28px;
+}
+
+li {
+  font-family: cursive;
+  color: brown;
+  line-height: 1.8em;
+}
+
+.firstListItem {
+  color: blueviolet;
+  border-bottom: 1px solid red;
+}
+
+.secondListItem {
+  color: yellowgreen;
+}
+
+#myContent {
+  border: 1px solid red;
+}
