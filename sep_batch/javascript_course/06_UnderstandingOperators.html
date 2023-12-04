@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        let num1 = 3;
+        let num2 = 6;
+
+        let res = null;
+
+        document.write(`the value of num1: ${num1} <br />`);
+        document.write(`the value of num2: ${num2} <br />`);
+
+        /* arithmatic */
+        /* binary: +, -, *, /, %, */
+        res = num1 + num2;
+        document.write(`the value of res: ${res} <br />`);
+
+        /* unary: ++, -- */
+        num1++;
+        document.write(`the value of num1: ${num1} <br />`);
+
+        /* assignment: +=, -=, *=, /=, %=  */
+        num1 += num2;
+        document.write(`the value of num1: ${num1} <br />`);
+
+        /* comparison: <, >, <=, >=, ==, != */
+        let x = "3";
+        let y = 3;
+        let z = 3.0;
+
+        res = x < y;
+        document.write(`the value of res: ${res} <br />`);
+
+        /* conditional: ? : */
+        res = x > y ? "true" : "false";
+        document.write(`the value of res: ${res} <br />`);
+
+        /* logical: &&, ||, ! */
+        res = x > y || y == z;
+        document.write(`the value of res: ${res} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

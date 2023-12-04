@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      class Person {
+        constructor(personId, personName, personEmail) {
+          this.personId = personId;
+          this.personName = personName;
+          this.personEmail = personEmail;
+        }
+      }
+
+      class Employee extends Person {
+        constructor(
+          personId,
+          personName,
+          personEmail,
+          employeeDesignation,
+          employeeSalary
+        ) {
+          super(personId, personName, personEmail);
+          this.employeeDesignation = employeeDesignation;
+          this.employeeSalary = employeeSalary;
+        }
+
+        getEmployee() {
+          document.getElementById("showEmployee").innerHTML += `
+            <br /> Person Details <br />
+            ------------------------------------------------ <br />
+            personId: ${this.personId} <br />
+            personName: ${this.personName} <br />
+            personEmail: ${this.personEmail} <br />
+
+            <br />
+            Employee Details <br />
+            ------------------------------------------------ <br />
+            employeeDesignation: ${this.employeeDesignation} <br />
+            employeeSalary: ${this.employeeSalary} <br />
+            `;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showEmployee"></div>
+
+      <script>
+        let emp1 = new Employee(1, "john", "john@gmail.com", "Hr", "$3252");
+        emp1.getEmployee();
+
+        let emp2 = new Employee(
+          2,
+          "paul",
+          "paul@gmail.com",
+          "Developer",
+          "$75733"
+        );
+        emp2.getEmployee();
+
+        let emp3 = new Employee(
+          3,
+          "david",
+          "david@gmail.com",
+          "Executive",
+          "$7335"
+        );
+        emp3.getEmployee();
+      </script>
+    </div>
+  </body>
+</html>

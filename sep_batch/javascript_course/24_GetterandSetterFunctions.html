@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      var getValue, setValue;
+
+      (function () {
+        var secret = 0;
+
+        getValue = function () {
+          return secret;
+        };
+
+        setValue = function (x) {
+          if (typeof x === "number") {
+            secret = x;
+          }
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        document.write(`getValue: ${getValue()} <br />`);
+        setValue(3);
+        document.write(`getValue: ${getValue()} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

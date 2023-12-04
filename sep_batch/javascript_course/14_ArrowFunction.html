@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      let doCalc = (n1, n2) => {
+        let res = n1 + n2;
+        return res;
+      };
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        let num1 = 16;
+        let num2 = 18;
+
+        let res = 0;
+
+        res = doCalc(num1, num2);
+        document.write(`the calculation of res returned value: ${res} <br />`);
+
+        num1 = 91;
+        num2 = 31;
+
+        res = doCalc(num1, num2);
+        document.write(`the calculation of res returned value: ${res} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

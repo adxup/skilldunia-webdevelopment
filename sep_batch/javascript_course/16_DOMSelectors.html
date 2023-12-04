@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with an id mark</p>
+      <p>this is a simple para</p>
+
+      <p class="test">this is a para with a class test</p>
+      <p class="block test">
+        this is a para with the classes of block and test
+      </p>
+
+      <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li class="tick">services</li>
+        <li>portfolio</li>
+        <li>contact us</li>
+      </ul>
+
+      <script>
+        // selecting the elements by id
+        var match = document.getElementById("mark");
+        document.write(`the selected element by id: ${match.innerHTML} <br />`);
+
+        match.style.backgroundColor = "#000";
+        match.style.color = "#fff";
+
+        // selecting the elements by classname
+        var matches = document.getElementsByClassName("test");
+        document.write(
+          `the no of items that are matched with a class test: ${matches.length} <br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#cecece";
+        }
+
+        // selecting the elements by tagname
+        var matches = document.getElementsByTagName("p");
+        document.write(
+          `the no of items that are matched with a class test: ${matches.length} <br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#ffd";
+        }
+
+        // querySelectorAll
+        var matches = document.querySelectorAll("li.tick");
+        document.write(
+          `the no of items that are matched with a class test: ${matches.length} <br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#ffd";
+        }
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+h1 {
+  background-color: lightcyan;
+}
+
+div {
+  border: 1px solid red;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* class */
+div.customDiv {
+  border: 1px solid yellowgreen;
+  background-color: darkorange;
+  color: #fff;
+}
+
+/* id */
+li#listItem {
+  background-color: #615;
+  color: #fff;
+}
+
+img {
+  width: 110px;
+  padding: 10px;
+  border: 2px solid #f46;
+  margin: 10px;
+}
+
+.customImg {
+  border: 2px dotted #278;
+  background-color: #615;
+}
+
+input {
+  border: 1px solid #f00;
+  background-color: yellowgreen;
+}
+
+table {
+  padding: 10px;
+}
+
+th,
+td {
+  border: 1px solid #615;
+}
+
+tr:nth-child(even) {
+  background-color: blanchedalmond;
+}

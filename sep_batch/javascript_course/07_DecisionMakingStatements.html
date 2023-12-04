@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        /* if, if else, switch */
+        let num1 = 5;
+
+        if (num1 == 5) {
+          document.write(`the condition is true! <br />`);
+        } else {
+          document.write(`the condition is false! <br />`);
+        }
+
+        let productName = "hp";
+        switch (productName) {
+          case "dell":
+            document.write(
+              `the productName: ${productName} is matching with case 'dell' <br />`
+            );
+            break;
+
+          case "hp":
+            document.write(
+              `the productName: ${productName} is matching with case 'hp' <br />`
+            );
+            break;
+
+          case "acer":
+            document.write(
+              `the productName: ${productName} is matching with case 'acer' <br />`
+            );
+            break;
+
+          case "lenovo":
+            document.write(
+              `the productName: ${productName} is matching with case 'lenovo' <br />`
+            );
+            break;
+
+          default:
+            document.write(`none of the case is matching! <br />`);
+        }
+      </script>
+    </div>
+  </body>
+</html>

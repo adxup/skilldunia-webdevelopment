@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      function myFunc() {
+        try {
+          var num = 13.8642;
+          if (num.toFixed(200)) {
+            document.getElementById(
+              "showRes"
+            ).innerHTML = `the num value: ${num}`;
+          } else {
+            throw new Error("its a rangeError!");
+          }
+        } catch (err) {
+          document.getElementById("showRes").innerHTML = `the err: ${err}`;
+        } finally {
+          document.getElementById(
+            "showRes"
+          ).innerHTML += `this is a final statement`;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" id="myBtn">click on myBtn</button>
+      <div id="showRes"></div>
+      <script>
+        var btn = document.getElementById("myBtn");
+        btn.addEventListener("click", myFunc);
+      </script>
+    </div>
+  </body>
+</html>

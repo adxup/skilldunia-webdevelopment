@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      //   setTimeout(function () {
+      //     document.write("executing this in 1sec");
+      //   }, 3000);
+
+      setInterval(function () {
+        var curDt = new Date();
+        document.getElementById("clock").innerHTML = curDt;
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="clock"></div>
+      <script></script>
+    </div>
+  </body>
+</html>

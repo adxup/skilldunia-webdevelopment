@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      function doDisplay(res) {
+        document.write(`the callBack function res: ${res} <br />`);
+      }
+      function doCalc(n1, n2, callBack) {
+        let res = n1 * n2;
+        callBack(res);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        let num1 = 4;
+        let num2 = 7;
+
+        doCalc(num1, num2, doDisplay);
+      </script>
+    </div>
+  </body>
+</html>

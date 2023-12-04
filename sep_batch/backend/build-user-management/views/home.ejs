@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+  </head>
+  <body>
+    <div>
+      <h4>User Management</h4>
+
+      <hr />
+
+      <table>
+        <tr>
+          <th>User Id</th>
+          <th>User Name</th>
+          <th>User Email</th>
+        </tr>
+
+        <% data.forEach(element => { %>
+        <tr>
+          <td><%= element.userId %></td>
+          <td><%= element.userName %></td>
+          <td><%= element.userEmail %></td>
+        </tr>
+        <% }) %>
+      </table>
+    </div>
+  </body>
+</html>

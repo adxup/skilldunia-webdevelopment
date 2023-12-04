@@ -1,0 +1,56 @@
+-> what is javascript?
+    - javascript is a client side scripting or programming language
+    - use of javascript is to create more interactive to the web pages
+
+-> displaying the data in javascript
+    1. active window:
+        document.write()
+
+    2. dialog boxes
+        1. alert()
+        2. confirm()
+        3. prompt()
+
+    3. debug mode
+        1. console.log()
+        2. console.warn()
+        3. console.error()
+
+-> data types in javascript:
+    1. primitive 
+        1. number 
+        2. string 
+        3. boolean
+
+    2. abstract (non primitive)
+        1. array
+        2. function
+        3. objects
+
+    3. misc
+        1. null
+        2. undefined
+
+-> identifiers
+-> keywords
+
+-> declare the variables
+    1. var 
+    2. let 
+    3. const 
+
+-> operators
+    1. arithmatc
+    2. assignment 
+    3. comparison
+    4. conditional
+    5. logical
+
+-> statements
+    1. decision making statements
+    2. loop statements
+
+-> arrays
+-> functions
+
+-> dom

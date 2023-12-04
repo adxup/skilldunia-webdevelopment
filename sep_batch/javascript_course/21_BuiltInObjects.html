@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        document.write(
+          `the window width: ${window.innerWidth} and height: ${window.innerHeight} <br />`
+        );
+
+        document.write(
+          `the window width: ${document.documentElement.clientWidth} and height: ${document.documentElement.clientHeight} <br />`
+        );
+
+        document.write(
+          `the screen size width: ${screen.width} and height: ${screen.height} <br />`
+        );
+
+        document.write(
+          `the screen size width: ${screen.availWidth} and height: ${screen.availHeight} <br />`
+        );
+
+        document.write(`href: ${window.location.href} <br />`);
+
+        window.location.assign("http://google.com");
+      </script>
+    </div>
+  </body>
+</html>

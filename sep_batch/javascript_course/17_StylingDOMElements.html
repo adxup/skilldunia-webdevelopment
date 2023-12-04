@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      #intro {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="intro" style="color: red; font-size: 20px">
+        this is a para with an id and as well inline style
+      </p>
+
+      <div id="info" class="disabled">
+        it is a div with an id and as well class
+      </div>
+      <script>
+        var elem = document.getElementById("intro");
+
+        // inline style in js
+        elem.style.textAlign = "right";
+        elem.style.textDecoration = "line-through";
+
+        var elem = document.getElementById("info");
+
+        // classname
+        elem.className = "note";
+        elem.className += " highlight";
+
+        // classlist
+        elem.classList.add("agile");
+        elem.classList.add("scrum");
+
+        elem.classList.remove("note");
+        elem.classList.toggle("highlight");
+      </script>
+    </div>
+  </body>
+</html>

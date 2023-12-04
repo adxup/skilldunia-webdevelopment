@@ -1,0 +1,99 @@
+* {
+  margin: 0px auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+.wrapper {
+  width: 992px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: none;
+  border-radius: 2px;
+}
+
+.clr {
+  clear: both;
+}
+
+.column {
+  margin: 15px;
+  padding: 0;
+}
+
+.column::after {
+  content: "";
+  display: block;
+}
+
+.column div {
+  position: relative;
+  float: left;
+  width: 225px;
+  height: 175px;
+  margin: 0px 0px 0px 25px;
+  padding: 10px;
+}
+
+.column div:first-child {
+  margin-left: 0;
+}
+
+.column div span {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 225px;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+figure {
+  width: 225px;
+  height: 175px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+.hover01 figure img {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+
+.hover01:hover figure img {
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}

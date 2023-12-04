@@ -1,0 +1,9 @@
+h1 {
+  background-color: lightcyan;
+}
+
+div {
+  border: 1px solid rgb(5, 18, 19);
+  background-color: #04a;
+  margin-bottom: 10px;
+}

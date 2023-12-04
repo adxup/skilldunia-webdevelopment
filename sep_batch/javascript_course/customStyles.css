@@ -1,0 +1,21 @@
+* {
+  margin: 0px auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #cecece;
+  line-height: 2em;
+  font-family: inherit;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 992px;
+  padding: 10px 15px;
+}

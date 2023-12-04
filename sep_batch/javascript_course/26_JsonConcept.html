@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      var user = `
+            {
+                "name": "john", 
+                "age": 23, 
+                "country": "usa", 
+                "rating": [23, 76, 48, 93, 67]
+            }
+        `;
+
+      console.log(`user: ${user}`);
+      console.log(`user typeof: ${typeof user}`);
+
+      var userObj = JSON.parse(user);
+      console.log(`userObj: ${userObj}`);
+      console.log(`userObj typeof: ${typeof userObj}`);
+
+      console.log(`userObj: ${userObj.name}`);
+
+      //   document.getElementById("showJSON").innerHTML = user;
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showJSON"></div>
+      <script>
+        var person = `
+            {
+                "name": "asdf", 
+                "email": "asdf@gmail.com"
+            }
+        `;
+        document.getElementById("showJSON").innerHTML = person;
+      </script>
+    </div>
+  </body>
+</html>

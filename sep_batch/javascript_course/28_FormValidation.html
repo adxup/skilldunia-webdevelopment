@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form name="frm" method="post" action="#" onsubmit="return checkForm()">
+        <table border="1px">
+          <tr>
+            <th colspan="2">Form Validation</th>
+          </tr>
+
+          <tr>
+            <td>UserName</td>
+            <td>
+              <input type="text" name="userName" value="" />
+              <div id="userNameErr"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>EmailAddress</td>
+            <td>
+              <input type="text" name="emailAddress" value="" />
+              <div id="emailAddressErr"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>MobileNumber</td>
+            <td>
+              <input type="text" name="mobileNumber" value="" />
+              <div id="mobileNumberErr"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Password</td>
+            <td>
+              <input type="text" name="password" value="" />
+              <div id="passwordErr"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender" value="male" /> male
+              <input type="radio" name="gender" value="female" /> female
+              <div id="genderErr"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Skills</td>
+            <td>
+              <input type="checkbox" name="skills[]" value="php" /> php
+              <input type="checkbox" name="skills[]" value="python" /> python
+              <input type="checkbox" name="skills[]" value="java" /> java
+              <input type="checkbox" name="skills[]" value="aws" /> aws
+              <input type="checkbox" name="skills[]" value="other" /> other
+            </td>
+          </tr>
+
+          <tr>
+            <td>Country</td>
+            <td>
+              <select name="country">
+                <option value="">choose country</option>
+                <option value="india">india</option>
+                <option value="usa">usa</option>
+                <option value="uae">uae</option>
+                <option value="uk">uk</option>
+                <option value="other">other</option>
+              </select>
+              <div id="countryErr"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Description</td>
+            <td>
+              <textarea name="description"></textarea>
+              <div id="descriptonErr"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="submit" name="submit" value="submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <script></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+-> what is html?
+    - html stands for hyper text markup language
+    - it is used to create the web pages
+    - what is a web page?
+        - a page which loads into your browser as a response from server
+        - this page can consists of different formats of a content
+        - content: a content can be either a text, image, video, audio, input, list, link, etc., 
+
+-> to create a web page:
+    1. elements 
+        - an element is a name which is used to represent the format of a particular content
+        - there are 2 types of elements
+            1. block element
+                <elementName>
+                    .....
+                    .....
+                </elementName>
+
+                <p>..</p>, <div>..</div>, 
+
+            2. inline element
+                <elementName />
+
+                <img />, <input />
+
+    2. attributes
+        - an attribute is a name which is used to represent the characteristics or properties of an element
+        - there are 2 types of elements
+            1. block element
+                <elementName attributeName = "itsValue" attributeName>
+                    .....
+                    .....
+                </elementName>
+
+                <p hidden>..</p>, <div style="">..</div>, 
+
+            2. inline element
+                <elementName attributeName = "itsValue" attributeName />
+
+                <img src = "path_to_image" hidden />, <input type = "text" />
+
+    elements:
+    1. some elements are independent
+    2. some elements are dependent upon the attributes
+
+    attributes:
+    1. some attributes are having values
+    2. some attributes are not having values
+
+-> how to display the content with different formats of elements
+    h1 - h6, p, strong, u, i, br., 
+
+-> creating a link
+    a & href, target, title
+
+-> displaying the image
+    img & src, title, alt, width & height
+
+-> listings
+    1. order list - ol, li, 
+    2. unorder list - ul, li, 
+
+-> tables
+    table, tr, th, td, 
+
+-> form
+    input - text, email, password, radio
+
+-> media objects
+    video, audio
+
+-> semantic elements
+    main, 
+    header, 
+    footer, 
+    nav, 
+    section, 
+    article, 
+    audio, 
+    video, 
+    figure, 
+    aside
+
+    div - html4 & html5

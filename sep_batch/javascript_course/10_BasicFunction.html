@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      function myFunc() {
+        document.write(`this is myFunc <br />`);
+      }
+
+      function doCalc() {
+        let res = num1 + num2;
+        document.write(`the value of res: ${res} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // myFunc();
+
+        let num1 = 4;
+        let num2 = 7;
+
+        doCalc();
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+-> what is css?
+    - css full form is casacading style sheets
+    - used to apply the styles to the content
+
+-> how?
+    - there are 3 different ways
+    1. inline 
+    2. embedded 
+    3. external
+
+-> color
+    1. name 
+    2. numerical 
+    3. hexadecimal 
+
+-> comment
+    1. single 
+    2. mullti - /* ... */
+
+-> custom styling
+    1. class 
+    2. id

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+    <!-- scripting -->
+    <script src="customScripts.js"></script>
+    <script>
+      function doCalc(n1, n2) {
+        let res = n1 + n2;
+        document.write(`the calculation of res: ${res} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        let num1 = 6;
+        let num2 = 8;
+
+        doCalc(num1, num2);
+
+        num1 = 9;
+        num2 = 3;
+
+        doCalc(num1, num2);
+      </script>
+    </div>
+  </body>
+</html>
