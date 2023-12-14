@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        /* scripting */
+        // window
+        document.write(
+          `the window width: ${window.innerWidth} and height: ${window.innerHeight} <br /> `
+        );
+
+        document.write(
+          `the window width: ${document.documentElement.clientWidth} and height: ${document.documentElement.clientHeight} <br /> `
+        );
+
+        // screen
+        document.write(
+          `the screen width: ${screen.width} and height: ${screen.height} <br /> `
+        );
+
+        document.write(
+          `the screen width: ${screen.availWidth} and height: ${screen.availHeight} <br /> `
+        );
+
+        // location
+        document.write(`href: ${window.location.href} <br />`);
+        document.write(`protocol: ${window.location.protocol} <br />`);
+        document.write(`host: ${window.location.host} <br />`);
+        document.write(`hostname: ${window.location.hostname} <br />`);
+        document.write(`portno: ${window.location.port} <br />`);
+
+        // loading documents
+        // window.location.assign("https://google.com");
+        // window.location.replace("https://linkedin.com");
+
+        // history
+        document.write(
+          `you have accessed the page: ${history.length} for no no of times <br />`
+        );
+
+        // document.write(window.history.back());
+        // document.write(window.history.forward());
+        // document.write(window.history.go(-2));
+
+        // navigator
+        let res = navigator.onLine;
+        document.write(`the res: ${res} <br />`);
+
+        res = navigator.cookieEnabled;
+        document.write(`the res: ${res} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

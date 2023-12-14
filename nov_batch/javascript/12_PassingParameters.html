@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      // function definition
+      function myCalc(n1, n2) {
+        let num1 = 4;
+        let num2 = 6;
+
+        let res = 0;
+
+        res = n1 ** n2;
+
+        document.write(`the value of variable n1: ${n1} <br />`);
+        document.write(`the value of variable n2: ${n2} <br />`);
+
+        document.write(`the value of variable res: ${res} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        /* scripting */
+        let num1 = 8;
+        let num2 = 2;
+
+        // function call
+        myCalc(num1, num2);
+
+        num1 = 6.2;
+        num2 = 2.8;
+
+        myCalc(num1, num2);
+      </script>
+    </div>
+  </body>
+</html>

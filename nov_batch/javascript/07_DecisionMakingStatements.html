@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        /* scripting */
+        // if, if else, if else if, switch case
+
+        let a = 0; // 0,  , "", false, null - false
+
+        // if
+        if (a) {
+          document.write(
+            `the value of variable a: ${a} is a valid value<br />`
+          );
+        } else {
+          document.write(
+            `the value of variable a: ${a} is not a valid value<br />`
+          );
+        }
+
+        // switch case
+        let productName = "hp1";
+
+        switch (productName) {
+          case "dell":
+            document.write(
+              `the value of productName: ${productName} is matching with the case: 'dell' <br />`
+            );
+            break;
+
+          case "hp":
+            document.write(
+              `the value of productName: ${productName} is matching with the case: 'hp' <br />`
+            );
+            break;
+
+          case "lenovo":
+            document.write(
+              `the value of productName: ${productName} is matching with the case: 'lenovo' <br />`
+            );
+            break;
+
+          case "acer":
+            document.write(
+              `the value of productName: ${productName} is matching with the case: 'acer' <br />`
+            );
+            break;
+
+          default:
+            document.write(`none of the case is matching <br />`);
+        }
+      </script>
+    </div>
+  </body>
+</html>

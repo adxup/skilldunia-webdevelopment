@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      function myDisplay(r) {
+        document.write(`the res: ${r} <br />`);
+      }
+
+      function myCalc(n1, n2, callBack) {
+        let res = n1 / n2;
+        callBack(res);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        /* scripting */
+        myCalc(62, 87, myDisplay);
+      </script>
+    </div>
+  </body>
+</html>

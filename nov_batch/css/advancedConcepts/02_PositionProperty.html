@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Property</title>
+    <style>
+      .box {
+        width: 125px;
+        height: 125px;
+      }
+
+      .box1 {
+        border: 1px solid #f00;
+        background-color: rgba(255, 0, 0, 1);
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+      }
+
+      .box2 {
+        border: 1px solid #0f0;
+        background-color: rgba(0, 255, 0, 1);
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 3;
+      }
+
+      .box3 {
+        border: 1px solid #00f;
+        background-color: rgba(0, 0, 255, 1);
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">one</div>
+    <div class="box box2">two</div>
+    <div class="box box3">three</div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      class UserDetails {
+        constructor(userId, userName, userEmail, userMobile, userStatus) {
+          this.userId = userId;
+          this.userName = userName;
+          this.userEmail = userEmail;
+          this.userMobile = userMobile;
+          this.userStatus = userStatus;
+        }
+
+        getUser() {
+          document.getElementById("showUser").innerHTML += `
+                <br /> Displaying User Details <br />
+                ------------------------------------------------- <br />
+                UserId: ${this.userId} <br />
+                UserName: ${this.userName} <br />
+                UserEmail: ${this.userEmail} <br />
+                UserMobile: ${this.userMobile} <br />
+                UserStatus: ${this.userStatus} <br />
+            `;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showUser"></div>
+      <script>
+        /* scripting */
+        let user1 = new UserDetails(
+          1,
+          "john",
+          "john@gmail.com",
+          "+(493) 248 8428",
+          true
+        );
+
+        user1.getUser();
+
+        let user2 = new UserDetails(
+          2,
+          "john2",
+          "john2@gmail.com",
+          "+(491) 248 8428",
+          false
+        );
+
+        user2.getUser();
+
+        let user3 = new UserDetails(
+          3,
+          "john3",
+          "john3@gmail.com",
+          "+(493) 242 8428",
+          true
+        );
+
+        user3.getUser();
+      </script>
+    </div>
+  </body>
+</html>

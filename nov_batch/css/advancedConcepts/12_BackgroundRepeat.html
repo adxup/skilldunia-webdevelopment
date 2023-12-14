@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Repeat</title>
+    <style>
+      div {
+        height: 50vh;
+        border: 2px solid #f00;
+      }
+
+      #repeat {
+        background-image: url(dot.png);
+        background-repeat: repeat;
+      }
+
+      #repeat-x {
+        background-image: url(dot.png);
+        background-repeat: repeat-x;
+      }
+
+      #repeat-y {
+        background-image: url(dot.png);
+        background-repeat: repeat-y;
+      }
+
+      #space {
+        background-image: url(dot.png);
+        background-repeat: space;
+      }
+
+      #round {
+        background-image: url(dot.png);
+        background-repeat: round;
+      }
+
+      #initial {
+        background-image: url(dot.png);
+        background-repeat: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="repeat"></div>
+    <div id="repeat-x"></div>
+    <div id="repeat-y"></div>
+    <div id="space"></div>
+    <div id="round"></div>
+    <div id="initial"></div>
+  </body>
+</html>

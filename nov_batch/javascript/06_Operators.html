@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        /* scripting */
+        /*
+            1. arithmatic: 
+                1.1. binary: +, -, *, /, %
+                1.2. unary: ++, --
+            2. assignment: +=, -=, *=, /=, %=
+            3. comparison: <, >, <=, >=, ==, !=, ===, !==
+            4. conditional or ternary: () ? :
+            5. logical: &&, ||, !
+        */
+
+        let num1 = 4;
+        let num2 = 7;
+
+        let res = 0;
+
+        document.write(`the value of num1: ${num1} <br />`);
+        document.write(`the value of num2: ${num2} <br />`);
+
+        // arithmatic
+        res = num1 / num2;
+        document.write(`the value of res: ${res} <br />`);
+
+        document.write(`the value of num1: ${num1} before ++ <br />`);
+        ++num1; // num1 = 1 + num1;
+        document.write(`the value of num1: ${num1} after ++ <br />`);
+
+        // assignment
+        document.write(`the value of num1: ${num1} before += <br />`);
+        num1 += num2;
+        document.write(`the value of num1: ${num1} after += <br />`);
+
+        // comparison
+        let x = 4;
+        let y = "4";
+        let z = 4.0;
+
+        document.write(
+          `the value of x: ${x} and its datatype: ${typeof x} <br />`
+        );
+        document.write(
+          `the value of x: ${y} and its datatype: ${typeof y} <br />`
+        );
+        document.write(
+          `the value of x: ${z} and its datatype: ${typeof z} <br />`
+        );
+
+        res = x === y;
+        document.write(
+          `the value of res: ${res} and its datatype: ${typeof res} <br />`
+        );
+
+        // conditional
+        res =
+          x > y
+            ? "the value of x is greater than x"
+            : "the value of x is not greater than y";
+
+        document.write(
+          `the value of res: ${res} and its datatype: ${typeof res} <br />`
+        );
+
+        // logical
+        res = !(y >= z || z != x);
+        document.write(
+          `the value of res: ${res} and its datatype: ${typeof res} <br />`
+        );
+      </script>
+    </div>
+  </body>
+</html>

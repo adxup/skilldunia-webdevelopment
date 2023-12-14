@@ -1,0 +1,21 @@
+* {
+  margin: 0px auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.5em;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #efefef;
+}
+
+.wrapper {
+  width: 992px;
+  background-color: #fff;
+  padding: 10px 15px;
+}

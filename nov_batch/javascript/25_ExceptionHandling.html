@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      function doAction() {
+        let num1 = 10;
+        let num2 = 4;
+
+        let res = 0;
+
+        try {
+          res = num1 * num2;
+          if (res) {
+            document.getElementById(
+              "getRes"
+            ).innerHTML += `the res: ${res} <br />`;
+          } else {
+            throw new Error(
+              `there might be something invalid data: ${res} <br />`
+            );
+          }
+        } catch (err) {
+          document.getElementById("getRes").innerHTML += `${err}`;
+        } finally {
+          document.getElementById(
+            "getRes"
+          ).innerHTML += `irrespective of either successful or failre, this statement will be executed!! <br /> `;
+        }
+      }
+
+      function checkValid() {
+        var num = prompt("enter any number between 1 and 10");
+        var startTime = Date.now();
+
+        try {
+          if (num > 0 && num <= 10) {
+            let powerOf = Math.pow(num, num);
+            document.getElementById(
+              "getRes1"
+            ).innerHTML = `the powerOf of ${num}: ${powerOf} <br />`;
+          } else {
+            throw new Error(
+              `the entered number: ${num} is not a valid number <br />`
+            );
+          }
+        } catch (err) {
+          document.getElementById("getRes1").innerHTML = err;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" onclick="doAction()">do Action</button>
+      <div id="getRes"></div>
+
+      <button type="button" onclick="checkValid()">check Valid</button>
+      <div id="getRes1"></div>
+      <script>
+        /* scripting */
+      </script>
+    </div>
+  </body>
+</html>

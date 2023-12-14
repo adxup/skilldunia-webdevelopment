@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="main">
+        <h1 id="title">This is Heading with an Id = title</h1>
+        <p id="hint">This is Para with an Id = hint</p>
+      </div>
+
+      <script>
+        /* scripting */
+        // creating a new element
+        var newDiv = document.createElement("div");
+
+        // creating a text node
+        var newContent = document.createTextNode("this is a Text Node");
+
+        // adding or inserting the TextNode into the created Element
+        newDiv.appendChild(newContent);
+
+        // displaying the created element
+        document.write(newDiv.innerHTML);
+
+        var currentDiv = document.getElementById("main");
+
+        // append the element with body
+        document.body.appendChild(newDiv, currentDiv);
+      </script>
+    </div>
+  </body>
+</html>

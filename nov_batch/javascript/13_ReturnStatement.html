@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      // function definition
+      function makeFullName(fN, lN) {
+        let flN = fN + " " + lN;
+        return flN;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        /* scripting */
+        let firstName = "john";
+        let lastName = "paul";
+
+        let fullName = "";
+
+        // function call
+        fullName = makeFullName(firstName, lastName);
+        document.write(`the fullName: ${fullName} <br />`);
+
+        firstName = "qwerty";
+        lastName = "mnbvc";
+        // function call
+        fullName = makeFullName(firstName, lastName);
+        document.write(`the fullName: ${fullName} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

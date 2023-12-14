@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      let user1 = {
+        userId: 432,
+        userName: "john",
+        userEmail: "john@gmail.com",
+      };
+
+      let user2 = {
+        userId: 685,
+        userName: "paul",
+        userEmail: "paul@gmail.com",
+      };
+
+      let accessUser1 = `
+        User1 Details <br />
+        --------------------------------- <br />
+        UserId: ${user1.userId} <br />
+        UserName: ${user1.userName} <br />
+        UserEmail: ${user1.userEmail} <br />
+      `;
+
+      let accessUser2 = `
+        User2 Details <br />
+        --------------------------------- <br />
+        UserId: ${user2.userId} <br />
+        UserName: ${user2.userName} <br />
+        UserEmail: ${user2.userEmail} <br />
+      `;
+
+      console.log(accessUser1);
+
+      document.getElementById("showUser1").innerHTML = accessUser1;
+      document.getElementById("showUser2").innerHTML = accessUser2;
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showUser1"></div>
+      <div id="showUser2"></div>
+      <script>
+        /* scripting */
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+Aggregation:
+> db.mycollection.aggregate([
+	{
+		$group: {
+			"_id": "$key", 
+			"total": {$sum: 1}
+		}
+	}
+])
+
+Sorting:
+> db.mycollection.find().sort()
+
+Limiting: 
+> db.mycollection.find().limit(1)
+
+Searching:
+> db.mycollection.find({$text: {$search: "anotherValue2"}})

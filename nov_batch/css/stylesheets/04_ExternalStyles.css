@@ -1,0 +1,9 @@
+p {
+  font-size: 18px;
+}
+
+span {
+  font-weight: bold;
+  color: rgb(126, 163, 196);
+  background-color: #d3e6af;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Broken Images</title>
+    <style>
+      img {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: 300;
+        line-height: 2;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+      }
+
+      img::before {
+        content: "we are sorry, the image is broken :(";
+        display: block;
+        margin-bottom: 10px;
+        color: red;
+      }
+
+      img::after {
+        content: "(url: " attr(src) ")";
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="rouned.png" alt="rounded" title="rounded" />
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      function myFunc1() {
+        document.getElementById(
+          "displayContext1"
+        ).innerHTML = `user clicked on Btn1!`;
+      }
+
+      function myFunc2() {
+        document.getElementById(
+          "displayContext2"
+        ).innerHTML = `user clicked on Btn2!`;
+      }
+
+      function myFunc3() {
+        document.getElementById(
+          "displayContext3"
+        ).innerHTML = `user clicked on Btn3!`;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" id="myBtn1" onclick="myFunc1()">
+        Click on myBtn1!!
+      </button>
+
+      <button type="button" id="myBtn2">Click on myBtn2!!</button>
+
+      <button type="button" id="myBtn3">Click on myBtn3!!</button>
+
+      <div id="displayContext1"></div>
+      <div id="displayContext2"></div>
+      <div id="displayContext3"></div>
+      <script>
+        /* scripting */
+        var btn2 = document.getElementById("myBtn2");
+        btn2.onclick = myFunc2;
+
+        var btn3 = document.getElementById("myBtn3");
+        btn3.addEventListener("click", myFunc3);
+        btn3.removeEventListener("click", myFunc3);
+      </script>
+    </div>
+  </body>
+</html>

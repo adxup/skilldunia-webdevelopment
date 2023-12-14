@@ -1,0 +1,58 @@
+Course Title: Java Full Stack Development
+
+Course Duration: 30 Hours
+
+Module 1: Introduction to Java Programming (2 hours)
+- Overview of Java
+- Setting up Java Development Environment
+- Basic Java Syntax and Data Types
+- Control Flow and Looping Constructs
+
+Module 2: Object-Oriented Programming in Java (3 hours)
+- Classes and Objects
+- Inheritance, Polymorphism, Encapsulation, and Abstraction
+- Interfaces and Abstract Classes
+
+Module 3: Java Standard Edition (Java SE) (4 hours)
+- Collections Framework
+- Exception Handling
+- File I/O
+- Multithreading Basics
+
+Module 4: Introduction to Spring Framework (4 hours)
+- Overview of Spring Framework
+- Dependency Injection and Inversion of Control
+- Spring Core Concepts
+- Introduction to Spring Boot
+
+Module 5: Building Web Applications with Spring Boot (6 hours)
+- Spring Boot Architecture
+- Creating RESTful APIs with Spring Boot
+- Spring Boot Data JPA for Database Integration
+- Unit Testing with JUnit and Mockito
+
+Module 6: Frontend Development with HTML, CSS, and JavaScript (3 hours)
+- Basics of HTML and CSS
+- Introduction to JavaScript
+- DOM Manipulation
+
+Module 7: Introduction to MySQL (3 hours)
+- Setting up MySQL Database
+- Basic SQL Queries
+- Database Design and Normalization
+
+Module 8: Integrating MySQL with Spring Boot (4 hours)
+- Spring Data JPA and Hibernate
+- Configuring DataSource and EntityManager
+- CRUD Operations with MySQL Database
+
+Module 9: Building a Full Stack Java Project (1 hour)
+- Integrating Frontend and Backend
+- Implementing User Authentication
+- Deploying the Application
+
+Module 10: Project Work and Q&A (2 hours)
+- Hands-on Project: Developing a simple full-stack Java web application
+- Q&A session for doubt clarification
+
+Note: The course is designed for participants with a basic understanding of programming concepts. It emphasizes hands-on projects to reinforce learning. Additional resources, such as online documentation and tutorials, will be provided to enhance the learning experience. The course duration and content can be adjusted based on the participants' background and pace of learning.

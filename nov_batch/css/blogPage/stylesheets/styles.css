@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  margin: 0px auto;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #cdcdcd;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: #f00;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.clr {
+  clear: both;
+}
+
+/* wrapper styles */
+.wrapper {
+  width: 992px;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px 10px;
+}
+
+.blogHorizontal {
+  width: 960px;
+  background-color: #fdedec;
+  border: 1px solid #782817;
+  margin: 5px;
+  padding: 5px;
+}
+
+.blogVertical {
+  width: 360px;
+  background-color: #fdedec;
+  border: 1px solid #782817;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+}
+
+.blogHeading {
+  color: #782817;
+}
+
+.blogImage {
+  width: 360px;
+  /* float: left; */
+  margin: 0px 5px 0px 0px;
+}

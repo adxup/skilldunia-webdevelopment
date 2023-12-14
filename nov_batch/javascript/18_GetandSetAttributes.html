@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .clientBtn {
+        color: red;
+      }
+    </style>
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="http://www.google.com" target="_blank" id="myLink"
+        >Go to Google</a
+      >
+
+      <br />
+
+      <button type="button" id="myBtn">Button with myBtn</button>
+
+      <br />
+
+      <a href="#" id="myLink1">It's a myLink1</a>
+
+      <br />
+      <script>
+        /* scripting */
+        // selecting the elements by Id attribute
+        var link = document.getElementById("myLink");
+
+        // getting the element's attribute value
+        var href = link.getAttribute("href");
+        document.write(`the href attribute value: ${href} <br />`);
+
+        // setting the attribute's to element's
+        var btn = document.getElementById("myBtn");
+        btn.setAttribute("class", "clientBtn");
+
+        // removing the attribute to element
+        link.removeAttribute("href");
+      </script>
+    </div>
+  </body>
+</html>

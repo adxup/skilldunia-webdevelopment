@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with an id = "mark"</p>
+      <p>this is another para with no attributes</p>
+
+      <p class="test">this is a para with class = "test"</p>
+      <p class="block test">
+        this is another para with class's = "block" and "test"
+      </p>
+
+      <ul>
+        <li id="mark">home</li>
+        <li>about us</li>
+        <li class="tickMark">services</li>
+        <li>portfolio</li>
+        <li>contact us</li>
+      </ul>
+
+      <script>
+        /* scripting */
+        // set the bg color of the body element
+        document.body.style.backgroundColor = "#f2ae46";
+
+        // selecting the elements by Id
+        var match = document.getElementById("mark");
+        match.style.backgroundColor = "#8a2c4a";
+
+        // selecting the elements by className
+        var matches = document.getElementsByClassName("test");
+        document.write(
+          `the no of items: ${matches.length} are selected with className: 'test'<br />`
+        );
+        // matches[0].style.backgroundColor = "#98ade6";
+        // matches[1].style.backgroundColor = "#98ade6";
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#98ad";
+        }
+
+        // selecting the elements by tagName
+        var matches = document.getElementsByTagName("p");
+        document.write(
+          `the no of items: ${matches.length} are selected with TagName: 'p'<br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#ad2ac6";
+        }
+
+        // selecting the elements with querySelector() or querySelectorAll()
+        var matches = document.querySelectorAll("li.tickMark");
+        document.write(
+          `the no of items: ${matches.length} are selected with querySelectorAll(): 'li'<br />`
+        );
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "#d2c6";
+        }
+      </script>
+    </div>
+  </body>
+</html>

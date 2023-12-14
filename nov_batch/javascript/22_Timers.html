@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- scripting -->
+    <script src="scripts.js"></script>
+    <script>
+      function myFunc() {
+        document.write(`the function is executing in just 3 sec gap <br />`);
+      }
+
+      function myFunc2() {
+        document.write(`the function is executing in just 1 sec gap <br />`);
+      }
+
+      function showTime() {
+        let curDt = new Date();
+        // document.write(`the current Date and Time: ${curDt} <br />`);
+        document.getElementById("displayTime").innerHTML = curDt;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="displayTime"></div>
+      <script>
+        /* scripting */
+        // setTimeout()
+        // setTimeout(myFunc, 3000);
+
+        // setInterval()
+        // setInterval(myFunc2, 1000);
+
+        setInterval(showTime, 1000);
+      </script>
+    </div>
+  </body>
+</html>

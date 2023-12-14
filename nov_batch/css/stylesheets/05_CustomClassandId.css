@@ -1,0 +1,29 @@
+body {
+  background-color: #eaecee;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f00;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #9a2f7e;
+}
+
+p {
+  /* font-family: "Courier New", Courier, monospace; */
+  color: #3498db;
+}
+
+/* class */
+p.contentType {
+  color: #f1ad6e;
+}
+
+/* id */
+#specifyContent {
+  background-color: lightgray;
+}

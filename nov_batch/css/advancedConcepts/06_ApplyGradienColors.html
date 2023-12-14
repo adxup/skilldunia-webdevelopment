@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applying Gradient Colors to Text and BG</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #123, #987);
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 48px;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#246),
+          to(#864)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A Template for Killer Website Content</h1>
+
+    <p>
+      Over the years of developing websites for clients, I’ve learned that the
+      age-old adage, “If you want it done right, you gotta do it yourself,” can
+      be a two-way street.
+    </p>
+
+    <p>
+      Of course, there are companies out there that have great web writers
+      internally, but most don’t. And the thought of a company turning a great
+      website content strategy (that we slaved over) into an ineffective
+      “brochure site” gives me heartburn. But sometimes you have to pick your
+      battles.
+    </p>
+  </body>
+</html>
